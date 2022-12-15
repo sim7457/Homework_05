@@ -325,6 +325,7 @@
 
 }
 
+
 .projects .inner>div:hover::before {
     width: 100%;
     height: 100%;
@@ -458,37 +459,134 @@
     text-align: center;
     font-size: 20px;
     font-weight: 500;
-    margin: 0 0 40px 0;
+    margin: 0 0 60px 0;
     color: #666;
 }
 
-.Name .inner {
+.News .inner {
+    display: flex;
+    gap: 60px;
     width: 1200px;
     margin: 0 auto;
 }
 
-.News .inner ul {
+.News .inner>div {
+    position: relative;
+    flex: 1;
+}
+
+.News .inner>div~div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+}
+
+.News .itm {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+
+.News .itm h3 {
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 70px;
+}
+
+.News .itm span {
+    margin: auto 0 0 0;
+}
+
+.News .itm p {
+    font-size: 16px;
+    text-align: left;
+
+    max-height: 65px;
+    overflow: hidden;
+    margin: 0 0 50px 0;
+
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+}
+
+.familysite {
+    line-height: 60px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.familysite .inner {
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.familysite .inner>div ul {
     display: flex;
     gap: 30px;
 }
 
-.News .inner ul li {
-    flex: 1;
+.familysite .inner img {
+    font-size: 0;
 }
 
-.news .inner a {
-    display: block;
+
+
+
+
+
+
+
+
+#footer {
+    background: #f9f9f9;
+    padding: 52px 0 60px 0;
+
 }
 
-.news .inner .tit {
+#footer .inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .inner h2 {
+    font-size: 0;
+
+}
+
+#footer .inner .right {
+    margin: 0 0 0 5px;
+}
+
+#footer .inner .right ul {
+    display: flex;
+    gap: 10px;
+
+}
+
+#footer .inner .right img {
+    height: 35px;
+}
+
+#footer .tit01 span {
+    margin: 0 10px;
     font-size: 18px;
-    text-align: center;
-    margin: 0 0 20px 0;
 }
 
-.news .inner .cont {
-
-    overflow: hidden;
+#footer .tit01 a {
+    font-weight: 700;
 }
 
-.news .inner .date {}
+#footer .tit01 p {
+    line-height: 25px;
+
+}
