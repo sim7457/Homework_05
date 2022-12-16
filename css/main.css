@@ -525,24 +525,39 @@
     width: 1200px;
     margin: 0 auto;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .familysite .inner>div ul {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+}
+
+.familysite .inner .left img {
+    vertical-align: -10px;
 }
 
 .familysite .inner img {
     font-size: 0;
 }
 
+.familysite .right li {
+    border-left: 1px solid #ddd;
+    padding: 0 0 0 30px;
+}
 
+.familysite .right li~li {
+    padding: 0 20px 0 25px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
 
-
-
-
-
-
+.familysite .right li i {
+    font-size: 25px;
+    margin: 0 0 0 5px;
+    vertical-align: -4px;
+}
 
 #footer {
     background: #f9f9f9;
