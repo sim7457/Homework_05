@@ -1,3 +1,63 @@
+.total_menu_area {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.total_menu_area.on {
+    display: block;
+    height: 4000px;
+}
+.bg_black{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+}
+.total_menu_area .close {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+.total_menu_area .totalWrap {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 1200px;
+    margin-left: -600px;
+    z-index: 9999;
+    color: #fff;
+}
+.total_menu_area .totalWrap .menuCol{
+    float: left;
+    width: 200px;
+    min-height: 300px;
+    margin: 0 50px 110px;
+}
+.total_menu_area .totalWrap .menuCol>a{
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 1px solid #c00;
+}
+.total_menu_area .totalWrap .menuCol li {
+    margin-bottom: 10px;
+    height: 30px;
+}
+.total_menu_area .totalWrap .menuCol .lmenu {
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
 @keyframes move {
     0% {
         top: 80%;
@@ -78,18 +138,21 @@
     height: 0;
     overflow: hidden;
 
+
     transition: 0.5s;
 }
 
 
 #header .gnb>ul:hover>li .submenu {
     height: 220px;
+
 }
 
 #header .gnb>ul>li .submenu li {
     font-size: 14px;
     font-weight: 400;
     text-align: center;
+
 }
 
 #header .gnb::before {
@@ -103,6 +166,7 @@
     border-top: 1px solid #ddd;
     z-index: 999;
     transition: 0.5s;
+
 }
 
 #header .gnb:hover::before {
@@ -116,6 +180,7 @@
 
 .mainVisual {
     position: relative;
+    height: 100vh;
 }
 
 .mainVisual .Name {
@@ -123,7 +188,7 @@
     top: 30%;
     left: 50%;
     margin: 0 0 0 -600px;
-    z-index: 999;
+    z-index: 888;
 
     font-size: 80px;
     font-weight: 700;
@@ -137,7 +202,7 @@
     top: 42%;
     left: 50%;
     margin: 0 0 0 -600px;
-    z-index: 999;
+    z-index: 888;
 
     font-size: 20px;
     font-weight: 500;
@@ -226,7 +291,6 @@
 
 .mainVisual .slick-dots>li button {
     display: none;
-
 }
 
 .scroll-down {
