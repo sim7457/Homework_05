@@ -1,4 +1,15 @@
 $(function () {
+  $(document).ready(function () {
+    $(".bars").on("click", function () {
+      $(".total_menu_area").show();
+    });
+
+    $(".close").on("click", function (event) {
+      event.preventDefault();
+      $(".total_menu_area").hide();
+    });
+  });
+
   $(".mainVisual .inner").slick({
     dots: true,
     fade: true,
